@@ -1,22 +1,4 @@
-<<<<<<< HEAD
-# Koh Lipe Instructor Earnings Calculator V5 (PWA)
-
-## Publish
-1. Create a **public** GitHub repository named `koh-lipe-earnings` (or your preferred name).
-2. Upload the **contents of this folder**, with `index.html` at the repository root (not the ZIP file itself).
-3. In repository **Settings → Pages**, select **Deploy from a branch → main → /(root)** and Save.
-4. Open `https://YOUR-USERNAME.github.io/koh-lipe-earnings/` (change the username and repository name).
-5. On iPhone: Safari → Share → Add to Home Screen; on Android: Chrome → Install app / Add to Home screen.
-
-## Data and backups
-Entries stay on that device in browser/app local storage. No server, account, or sync. Export **Backup all data (JSON)** routinely and before reinstalling. Earlier file:// records do **not** move automatically to the new HTTPS origin: export from V4 and restore into V5 where possible.
-
-## Calculation logic
-Recreational tank ฿200; OWD digital ฿3,200/student over 3 consecutive calendar days; AOWD about ฿2,650/student over 2 consecutive days; DSD standard two dives ฿1,000/student; DSD extra third dive ฿500/student (verify instructor compensation); personal sales 5% of sales value (verify eligibility).
-
-See `user-guide.html` for full instructions and caveats.
-=======
-# Koh Lipe Instructor Earnings Calculator — 1.1.0
+# Koh Lipe Instructor Earnings Calculator — 1.1.1
 
 Live site: https://abg1995.github.io/Dive-calculator/
 
@@ -56,7 +38,7 @@ Before each release change `VERSION` in `app.js`, app footer/title, service work
 
 ### Historical changelog
 
-- **1.1.0 (18 Nov 2026)**: Double Tank and Afternoon Dive separated; Refresher and Night Dive with editable pending rates; 5 languages; instructions/back buttons; compatible historical tank totals and backups; offline cache updated.
+- **1.1.1 (18 Nov 2026)**: Double Tank and Afternoon Dive separated; Refresher and Night Dive with editable pending rates; 5 languages; instructions/back buttons; compatible historical tank totals and backups; offline cache updated.
 - **1.0.0 (baseline for former V5)**: PWA for iOS/Android, offline cache, local storage/backup, monthly chart and CSV export. This baseline maps the previous informal V5 to a SemVer starting point, not an originally tagged Git release.
 - **Legacy V4**: OWD split over 3 calendar days and AOWD over 2, including month boundaries.
 - **Legacy V2–V3**: Touch controls, mobile fixes and runtime check.
@@ -65,4 +47,5 @@ Before each release change `VERSION` in `app.js`, app footer/title, service work
 ## Open questions
 
 Employer must confirm Refresher and Night Dive instructor rates, DSD third-dive instructor commission and whether the 5% sales commission is additional to instructor pay.
->>>>>>> 6e35fab (feat: update diving activities and add multilingual support (v1.1.0))
+
+- **1.1.1 (18 Nov 2026)**: Clean recovery release to replace mixed v5/v1.1.0 files after a Git conflict. No commission changes; fixes offline cache version and restores consistent HTML/JS.

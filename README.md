@@ -1,4 +1,4 @@
-# Koh Lipe Instructor Earnings Calculator — 1.1.1
+# Koh Lipe Instructor Earnings Calculator — 1.2.0
 
 Live site: https://abg1995.github.io/Dive-calculator/
 
@@ -25,7 +25,7 @@ Uses existing localStorage key `koh-lipe-instructor-earnings-v1`. Does not overw
 
 ## Languages
 
-Interface languages: English, Spanish, French, Portuguese, German. They share **one** `index.html`; the text dictionary is `LANG` at the beginning of `app.js`. Translation choice is stored locally under `koh-lipe-language`. User guide remains in English as previously requested. To add a language, add a `<option>` in `index.html` and a new dictionary in `app.js`. All entries and calculations are language-independent.
+Interface languages: English, Spanish, French, Portuguese, German, Bulgarian. They share **one** `index.html`; the text dictionary is `LANG` at the beginning of `app.js`. Translation choice is stored locally under `koh-lipe-language`. The English guide is `user-guide.html` and the full Bulgarian guide is `user-guide-bg.html`. The Instructions button opens the Bulgarian guide when Bulgarian is selected. To add a language, add a `<option>` in `index.html` and a new dictionary in `app.js`. All entries and calculations are language-independent.
 
 ## Versioning (Semantic Versioning)
 
@@ -38,7 +38,7 @@ Before each release change `VERSION` in `app.js`, app footer/title, service work
 
 ### Historical changelog
 
-- **1.1.1 (18 Nov 2026)**: Double Tank and Afternoon Dive separated; Refresher and Night Dive with editable pending rates; 5 languages; instructions/back buttons; compatible historical tank totals and backups; offline cache updated.
+- **1.2.0 (18 Nov 2026)**: Double Tank and Afternoon Dive separated; Refresher and Night Dive with editable pending rates; 5 languages; instructions/back buttons; compatible historical tank totals and backups; offline cache updated.
 - **1.0.0 (baseline for former V5)**: PWA for iOS/Android, offline cache, local storage/backup, monthly chart and CSV export. This baseline maps the previous informal V5 to a SemVer starting point, not an originally tagged Git release.
 - **Legacy V4**: OWD split over 3 calendar days and AOWD over 2, including month boundaries.
 - **Legacy V2–V3**: Touch controls, mobile fixes and runtime check.
@@ -48,4 +48,12 @@ Before each release change `VERSION` in `app.js`, app footer/title, service work
 
 Employer must confirm Refresher and Night Dive instructor rates, DSD third-dive instructor commission and whether the 5% sales commission is additional to instructor pay.
 
-- **1.1.1 (18 Nov 2026)**: Clean recovery release to replace mixed v5/v1.1.0 files after a Git conflict. No commission changes; fixes offline cache version and restores consistent HTML/JS.
+- **1.2.0 (18 Nov 2026)**: Clean recovery release to replace mixed v5/v1.1.0 files after a Git conflict. No commission changes; fixes offline cache version and restores consistent HTML/JS.
+
+
+## v1.2.0 — Bulgarian localization
+- Added Bulgarian (`bg`) interface strings in `app.js` and language selector entry in `index.html`.
+- Added fully translated `user-guide-bg.html`, with a link back to the calculator; the Instructions button automatically uses the Bulgarian guide for Bulgarian UI.
+- Updated the English user guide and service-worker precache to include both guides.
+- No changes to activity rates, localStorage key, historical records, or multi-day calculations.
+- SemVer: MINOR bump for a new compatible language feature.

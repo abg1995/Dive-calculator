@@ -1,6 +1,6 @@
-/* Koh Lipe instructor calculator v1.1.1 — offline cache */
-const CACHE='koh-lipe-earnings-v1.1.1';
-const SHELL=['./','./index.html','./app.js','./user-guide.html','./manifest.webmanifest','./icon-180.png','./icon-192.png','./icon-512.png'];
+/* Koh Lipe instructor calculator v1.2.0 — offline cache */
+const CACHE='koh-lipe-earnings-v1.2.0';
+const SHELL=['./','./index.html','./app.js','./user-guide.html','./user-guide-bg.html','./manifest.webmanifest','./icon-180.png','./icon-192.png','./icon-512.png'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(Promise.all([caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('koh-lipe-earnings-')&&k!==CACHE).map(k=>caches.delete(k)))),self.clients.claim()])));
 self.addEventListener('fetch',event=>{
